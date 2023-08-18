@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Russo One;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #8d8d8d;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #111;
+}
+
+.controls-container {
+  width: 240px;
+  height: 272px;
+  display: inline-block;
+  margin: 40px 20px 0 10px;
+  vertical-align: top;
+}
+
+.control {
+  width: 100px;
+  margin: auto;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+button{
+  width: 40px;
+  height: 20px;
+  background-color: #1ec8ce;
+  margin: 10px 0 5px;
+  cursor: pointer;
+}
+
+#display {
+  width: 200px;
+  background-color: gray;
+  margin: 15px auto;
+  padding: 15px;
+}
+
+.select {
+  margin: auto;
+  border: 1px solid white;
+  width: 50px;;
+  height: 20px;
+  padding: 1px;
+  background-color: white;
+}
+
+.inner {
+  width: 23px;
+  height: 16px;
+  background: blue;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+/* drum pad */
+
+.pad-bank {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.outer-drum-pad {
+  width: 100px;
+  height: 100px;
+  background-color: #ce1e1e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.drum-pad {
+  width: 97%;
+  height: 97%;
+  background: radial-gradient(#333, #070707);
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  padding-top: 35px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .inner-container {
+    transform: scale(0.7);
+  }
+}
