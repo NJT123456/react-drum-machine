@@ -25,9 +25,10 @@ code {
 }
 
 .inner-container {
+  position: relative;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 800px;
   padding: 20px;
   border-radius: 5px;
   text-align: center;
@@ -116,5 +117,18 @@ button{
 @media screen and (max-width: 650px) {
   .inner-container {
     transform: scale(0.7);
+  }
+  .pad-bank {
+    width: 100%;
+  }
+  .outer-drum-pad {
+    width: calc(33.33% - 20px);
+    height: calc(33.33% - 20px); 
+    margin: 5px;
+  }
+  .drum-pad {
+    width: 97%;
+    height: 97%;
+    padding-top: 25px;
   }
 }
